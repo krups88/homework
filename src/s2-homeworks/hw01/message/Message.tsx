@@ -2,7 +2,9 @@ import React from 'react'
 import s from './Message.module.css'
 
 // нужно создать правильный тип вместо any
-export type MessagePropsType = any
+export type MessagePropsType = {
+    message:{id: number}
+}
 
 // нужно отобразить приходящие данные
 const Message = (props: MessagePropsType) => {
@@ -37,4 +39,4 @@ const Message = (props: MessagePropsType) => {
     )
 }
 
-export default Message
+export default Message;

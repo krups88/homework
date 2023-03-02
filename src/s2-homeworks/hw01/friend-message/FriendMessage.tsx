@@ -2,14 +2,17 @@ import React from 'react'
 import s from './FriendMessage.module.css'
 
 // создать тип вместо any и отобразить приходящие данные
-const FriendMessage = (props: any) => {
+const FriendMessage = (props: {message:{id: number}}) => {
+
+
+
     return (
         <div
             id={'hw1-friend-message-' + props.message.id}
             className={s.friendMessage}
         >
             <div className={s.friendImageAndText}>
-                <img
+                <img 
                     id={'hw1-friend-avatar-' + props.message.id}
                     // создаёт студент
 
@@ -46,4 +49,4 @@ const FriendMessage = (props: any) => {
     )
 }
 
-export default FriendMessage
+export default FriendMessage;
