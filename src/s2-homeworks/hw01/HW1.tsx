@@ -8,18 +8,21 @@ import avatar from './avatar.png'
 /*
 * 1 - описать тип MessageType ^^^^
 * 2 - описать тип MessagePropsType в файле Message.tsx ^^^^^^
-* 3 - в файле Message.tsx отобразить приходящие данные 
+* 3 - в файле Message.tsx отобразить приходящие данные
 * 4 - выполнить пункты 2, 3 в файле FriendMessage.tsx
 * 5 - сделать стили в соответствии с дизайном
 * */
 
+export type MessageOnceType ={text: string
+    time:string}
+
+    export type UserType = {avatar: string
+        name: string}
 // нужно создать правильный тип вместо any
 export type MessageType = {
     id: number
-    user: {avatar: string
-            name: string}
-    message: {text: string
-                time: any}
+    user: UserType
+    message: MessageOnceType
 }
 
 // структуру объекта не менять
@@ -64,4 +67,4 @@ const HW1 = () => {
     )
 }
 
-export default HW1
+export default HW1;
