@@ -31,18 +31,18 @@ export const message0: MessageType = {
     id: 0,
     user: {
         avatar: avatar, // можно менять
-        name: "Some Name",  // можно менять
+        name: "Bob",  // можно менять
     },
     message: {
         text: "some textsome textsome textsome textsome textsome textsome text", // можно менять
-        time: "22:00", // можно менять
+        time: "22:10", // можно менять
     },
 }
 export const friendMessage0: MessageType = {
     id: 100,
     user: {
         avatar: avatar, // можно менять
-        name: "Friend Name", // можно менять
+        name: "Lilu", // можно менять
     },
     message: {
         text: "зеркальное сообщение для тренировки css", // можно менять
@@ -53,7 +53,8 @@ export const friendMessage0: MessageType = {
 const HW1 = () => {
     return (
         <div id={"hw1"}>
-            <div className={s2.hwTitle}>Homework #1</div>
+            <div className={s2.hwTitle}>Homework № 1</div>
+            <div className={s2.HW_hr}><hr/></div>
             <div className={s2.hw}>
                 {/*проверка отображения (не менять)*/}
                 <div>

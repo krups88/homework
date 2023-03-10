@@ -11,7 +11,8 @@
 }
 
 .friendText {
-
+    color:black;
+    size: 16px;
 }
 
 .friendText:after {
@@ -19,7 +20,11 @@
 }
 
 .friendName {
-
+    color: black;
+    width: 35px;
+    height: 20px;
+    top: 307px;
+    left: 145px;
 }
 
 .friendMessageText {

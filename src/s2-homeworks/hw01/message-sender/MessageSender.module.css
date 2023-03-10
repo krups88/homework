@@ -1,17 +1,21 @@
 .sendForm {
-
+    Width: 976px;
+    Height: 40px;
+    Top: 432px;
+    Left: 70px;
+    Radius: 20px;
 }
 
 .textarea {
-
+    color:black;
 }
 
 .button {
-
+    color:white;
 }
 
 .button:hover {
-
+    color:grey;
 }
 .button:active {
 
