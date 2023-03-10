@@ -4,6 +4,7 @@ import MessageSender from "./message-sender/MessageSender"
 import s2 from "../../s1-main/App.module.css"
 import FriendMessage from "./friend-message/FriendMessage"
 import avatar from "./avatar.png"
+import s from "./message-sender/MessageSender.module.css";
 
 /*
 * 1 - описать тип MessageType ^^^^
@@ -15,14 +16,14 @@ import avatar from "./avatar.png"
 
 // нужно создать правильный тип вместо any
 export type MessageType = {
-   id:number
-    user:{
-       avatar: string
+    id: number
+    user: {
+        avatar: string
         name: string
     }
-    message:{
-       text: string
-        time:string
+    message: {
+        text: string
+        time: string
     }
 }
 
@@ -54,7 +55,8 @@ const HW1 = () => {
     return (
         <div id={"hw1"}>
             <div className={s2.hwTitle}>Homework № 1</div>
-            <div className={s2.HW_hr}><hr/></div>
+            <div className={s2.line_1}>
+            </div>
             <div className={s2.hw}>
                 {/*проверка отображения (не менять)*/}
                 <div>
@@ -64,7 +66,9 @@ const HW1 = () => {
 
                 {/*для автоматической проверки дз (не менять)*/}
                 <MessageSender M={Message}/>
+                <div className={s2.line_2}></div>
             </div>
+
         </div>
     )
 }

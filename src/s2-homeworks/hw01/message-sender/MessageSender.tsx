@@ -67,6 +67,7 @@ const MessageSender = (props: any) => {
                     Send
                     {/**/}
                 </button>
+
             </div>
         </>
     )
